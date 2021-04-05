@@ -1,0 +1,96 @@
+.signup {
+  margin-top: 5vh;
+  min-height: 50vh;
+  padding: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form {
+    border: 1px solid #555555;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 27px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    position: relative;
+    vertical-align: top;
+    height: 40px;
+    width: 25%;
+    padding: 0;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background: #4d4d4d;
+    border: 0;
+    border-bottom: 2px solid #d0d0d0;
+    cursor: pointer;
+    margin-left: auto;
+    font-weight: 700;
+  }
+  .btn:hover {
+    background-color: #7bebeb;
+  }
+
+  input:not([type="submit"]) {
+    flex: 1;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  p {
+    display: flex;
+  }
+
+  label {
+    width: 7em;
+    margin-right: 0.5em;
+  }
+
+  @media (max-width: 600px) {
+    p {
+      display: block;
+    }
+    label {
+      display: flex;
+      justify-content: flex-start;
+    }
+    input {
+      margin: 0 auto;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input[type="submit"] {
+      width: 90%;
+    }
+  }
+  .btn {
+    margin-top: 5vh;
+  }
+}
+
+.end {
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 600px) {
+    .end {
+      margin-top: 3vh;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

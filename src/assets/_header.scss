@@ -1,0 +1,123 @@
+.header-nav {
+  color: hsl(0, 0%, 75%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0% 1% 0%;
+
+  .logo {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    margin: 0;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    p {
+      transition: 0.3s;
+      font-weight: 600;
+      margin: 0% 3% 0% 0%;
+      cursor: pointer;
+    }
+    p:hover {
+      color: black;
+    }
+  }
+  .nav-bar-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      transition: 0.3s;
+      font-weight: 600;
+      margin: 0% 5% 0% 0%;
+      cursor: pointer;
+    }
+    a:hover {
+      color: black;
+    }
+    .btn {
+      background-color: #2bd0d0;
+      border-radius: 100px;
+      padding: 10px 30px;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #7bebeb;
+      border-radius: 100px;
+      padding: 10px 30px;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .nav-bar-mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 414px) {
+    .logo {
+      display: flex;
+      justify-content: flex-start;
+      margin: 4vh 0vh 0vh 4vh;
+      height: 6vh;
+    }
+    .navbar {
+      display: none;
+    }
+    .nav-bar-end {
+      display: none;
+    }
+    .nav-bar-mobile {
+      margin-left: 20vh;
+
+      .burger {
+        width: 30px;
+        height: 4px;
+        background-color: hsl(0, 0%, 75%);
+        margin: 5px 0;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+#dropdown-basic::after {
+  display: none;
+}
+
+.burger-container {
+  min-width: 100%;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+  .burger-item {
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-item-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2bd0d0;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0px;
+    font-weight: 600;
+  }
+}
